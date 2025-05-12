@@ -34,7 +34,7 @@ async function fetchWeather() {
         </div>`;
       return;
     } else {
-      return data[0]; // Contains name, lat, lon
+      return data[0]; 
     }
   }
 
@@ -57,7 +57,7 @@ async function fetchWeather() {
         <p><strong>Temperature:</strong> ${tempCelsius}°C</p>
         <p><strong>Description:</strong> ${data.weather[0].description}</p>
         <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
-        <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
+       
       </div>`;
   }
 
