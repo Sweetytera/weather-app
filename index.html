@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section id="weather-wrapper">
+      <h1>Weather App</h1>
+      <div id="weather-search">
+        <input id="search" type="text" placeholder="Search by city"/>
+        
+        <!-- Country dropdown -->
+        <select id="country">
+          <option value="">Any Country</option>
+          <option value="IN" selected>India</option>
+          <option value="US">USA</option>
+          <option value="GB">UK</option>
+          <option value="CA">Canada</option>
+          <option value="AU">Australia</option>
+        </select>
+
+        <input id="submit" type="button" value="Search" onclick="fetchWeather()" />
+      </div>
+      <div id="weather-data" style="display: none;"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
